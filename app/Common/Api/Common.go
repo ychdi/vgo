@@ -2,6 +2,7 @@ package Api
 
 import (
 	"github.com/gin-gonic/gin"
+	"ych/vgo/pkg/response"
 )
 
 func Test(ctx *gin.Context) {
@@ -36,6 +37,6 @@ func Test(ctx *gin.Context) {
 	//if err != nil {
 	//	return
 	//}
-	//response.Success(ctx, "666", nil)
-	//return
+	response.Success(ctx, "vgo!!!", nil)
+	return
 }

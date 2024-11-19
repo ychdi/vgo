@@ -1,12 +1,13 @@
 #App配置
 app:
   env: debug #环境状态：debug=开发，release=生产
-  host: 0.0.0.0
-  port: 8080
-  lang: zh-cn
-  requestLog: 0
-  apiOrigins: http://localhost:8080,http://127.0.0.1:5500
-  fileDomain: http://localhost:8080
+  host: 0.0.0.0   #服务地址
+  port: 8080      #服务端口
+  lang: zh-cn     #默认语言设置：zh-cn
+  requestLog: 0   #是否开启请求日志：0=关闭，1=开启
+  uploadType: cos #文件上传类型：local=本地，oss=阿里云OSS，cos=腾讯云COS
+  apiOrigins: http://localhost:8080,http://127.0.0.1:5500  #允许跨域请求的域名，多个域名用逗号分隔
+  fileDomain: http://localhost:8080  #文件访问域名，用于生成文件下载链接
 #Mysql数据库配置
 dbConf:
   driver: mysql
