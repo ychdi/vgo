@@ -1,14 +1,15 @@
 package app
 
 import (
-	AdminUserRouter "ych/vgo/app/AdminUser/Router"
-	ArticleRouter "ych/vgo/app/Article/Router"
-	CommonRouter "ych/vgo/app/Common/Router"
-	MenuRouter "ych/vgo/app/Menu/Router"
-	NoticeRouter "ych/vgo/app/Notice/Router"
-	RoleRouter "ych/vgo/app/Role/Router"
-	UploadRouter "ych/vgo/app/Upload/Router"
-	WsRouter "ych/vgo/app/Ws/Router"
+	AdminUserRouter "ych/vgo/app/admin-user/router"
+	ArticleRouter "ych/vgo/app/article/router"
+	CommonRouter "ych/vgo/app/common/router"
+	MenuRouter "ych/vgo/app/menu/router"
+	NoticeRouter "ych/vgo/app/notice/router"
+	RoleRouter "ych/vgo/app/role/router"
+	UploadRouter "ych/vgo/app/upload/router"
+	wsrouter "ych/vgo/app/ws/router"
+
 	"ych/vgo/internal/global"
 	"ych/vgo/internal/pkg/middleware/auth"
 	"ych/vgo/internal/pkg/middleware/permission"
@@ -25,7 +26,7 @@ func InitRouter() {
 
 	AdminUserRouter.CollectRoutes()
 	CommonRouter.CollectRoutes()
-	WsRouter.CollectRoutes()
+	wsrouter.CollectRoutes()
 	UploadRouter.CollectRoutes()
 
 	MenuRouter.CollectRoutes()

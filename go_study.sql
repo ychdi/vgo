@@ -152,14 +152,14 @@ CREATE TABLE `menus`  (
 -- ----------------------------
 INSERT INTO `menus` VALUES (1, NULL, '2024-11-04 14:07:32.892', 0, '/home/index', 'home', '', '', 'GET', '/home/index', 'HomeFilled', '首页', '', '', 2, 2, 1, 2, 1, 1, 99);
 INSERT INTO `menus` VALUES (3, NULL, NULL, 0, '/cms', 'cms', '/cms/notice', '', '', '', 'Lollipop', '内容管理', '', '', 2, 2, 2, 2, 1, 1, 0);
-INSERT INTO `menus` VALUES (4, NULL, '2024-11-04 11:32:35.063', 3, '/cms/notice', 'notice', '', '/backend/notices', 'GET', '/cms/notice/index', 'Menu', '公告管理', '', '', 2, 2, 2, 2, 1, 1, 0);
-INSERT INTO `menus` VALUES (5, NULL, NULL, 4, '/cms/notice/detail/:id', 'noticeDetail', '', '', '', '/cms/notice/detail', 'Menu', '公告 详情', '/cms/notice', '', 1, 2, 2, 2, 1, 1, 0);
+INSERT INTO `menus` VALUES (4, NULL, '2024-11-04 11:32:35.063', 3, '/cms/notice', 'notice', '', '/backend/notices', 'GET', '/cms/notice/index', 'menu', '公告管理', '', '', 2, 2, 2, 2, 1, 1, 0);
+INSERT INTO `menus` VALUES (5, NULL, NULL, 4, '/cms/notice/detail/:id', 'noticeDetail', '', '', '', '/cms/notice/detail', 'menu', '公告 详情', '/cms/notice', '', 1, 2, 2, 2, 1, 1, 0);
 INSERT INTO `menus` VALUES (6, NULL, '2024-11-04 11:31:44.123', 4, '', 'create', '', '/backend/notices', 'POST', '', '', '添加', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (7, NULL, '2024-11-04 11:33:44.041', 4, '', 'update', '', '/backend/notices', 'PUT', '', '', '编辑', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (8, NULL, '2024-11-04 11:33:47.909', 4, '', 'delete', '', '/backend/notices', 'DELETE', '', '', '删除', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (10, NULL, '2024-11-04 11:40:03.682', 4, '', 'change', '', '/backend/notices/change', 'POST', '', '', '修改状态', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (12, NULL, '2024-09-02 15:59:39.192', 0, '/authority', 'authority', '/authority/menu', '', '', '', 'Lock', '权限管理', '', '', 2, 2, 2, 2, 1, 1, 0);
-INSERT INTO `menus` VALUES (13, NULL, '2024-09-02 17:18:24.867', 12, '/authority/menu', 'menuAuthority', '', '', '', '/authority/menu/index', 'Menu', '菜单权限', '', '', 2, 2, 2, 2, 1, 1, 0);
+INSERT INTO `menus` VALUES (13, NULL, '2024-09-02 17:18:24.867', 12, '/authority/menu', 'menuAuthority', '', '', '', '/authority/menu/index', 'menu', '菜单权限', '', '', 2, 2, 2, 2, 1, 1, 0);
 INSERT INTO `menus` VALUES (30, '2024-09-02 10:35:03.467', '2024-11-04 11:46:41.797', 12, '/authority/admin_user', 'adminUser', '', '/backend/users', 'GET', '/authority/admin_user/index', 'Avatar', '管理员', '', '', 2, 2, 2, 2, 1, 1, 0);
 INSERT INTO `menus` VALUES (31, '2024-09-02 16:10:02.983', '2024-11-04 11:45:03.431', 12, '/authority/role', 'role', '', '/backend/roles', 'GET', '/authority/role/index', 'Stamp', '角色管理', '', '', 2, 2, 2, 2, 1, 1, 0);
 INSERT INTO `menus` VALUES (34, '2024-09-03 10:28:22.793', '2024-11-04 11:31:23.293', 1, '', 'none', '', '/backend/menus', 'GET', '', '', '用户菜单数据源', '', '', 1, 2, 2, 2, 1, 1, 0);
@@ -177,7 +177,7 @@ INSERT INTO `menus` VALUES (48, NULL, '2024-11-04 13:07:14.315', 31, '', 'update
 INSERT INTO `menus` VALUES (49, NULL, '2024-11-04 13:07:18.462', 31, '', 'delete', '', '/backend/roles', 'DELETE', '', '', '删除', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (50, NULL, '2024-11-04 11:46:02.201', 31, '', 'authority', '', '/backend/roles/set/menu', 'POST', '', '', '查看角色', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (51, NULL, '2024-11-04 11:46:05.540', 31, '', 'authority', '', '/backend/roles/get/menu', 'POST', '', '', '设置角色', '', '', 1, 2, 2, 2, 1, 2, 0);
-INSERT INTO `menus` VALUES (52, NULL, '2024-11-04 11:34:18.637', 3, '/cms/upload', 'upload', '', '', '', '/cms/upload/index', 'Upload', '文件上传', '', '', 2, 2, 2, 2, 1, 1, 0);
+INSERT INTO `menus` VALUES (52, NULL, '2024-11-04 11:34:18.637', 3, '/cms/upload', 'upload', '', '', '', '/cms/upload/index', 'upload', '文件上传', '', '', 2, 2, 2, 2, 1, 1, 0);
 INSERT INTO `menus` VALUES (53, NULL, '2024-11-04 14:13:59.287', 52, '', 'upload-img', '', '/backend/upload/local/img', 'POST', '', '', '图片上传', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (54, NULL, '2024-11-04 14:14:07.684', 52, '', 'upload-video', '', '/backend/upload/local/video', 'POST', '', '', '视频上传', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (55, '2024-10-31 16:31:36.808', '2024-11-04 11:35:23.780', 3, '/cms/article', 'article', '', '/backend/articles', 'GET', '/cms/article/index', 'Burger', '文章示例', '', '', 2, 2, 2, 2, 1, 1, 0);

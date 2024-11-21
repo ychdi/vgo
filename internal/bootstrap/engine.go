@@ -8,7 +8,7 @@ import (
 	"time"
 	"ych/vgo/app"
 	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/middleware/requestLogger"
+	"ych/vgo/internal/pkg/middleware/request-logger"
 	"ych/vgo/pkg/response"
 )
 
@@ -21,7 +21,7 @@ func Run() {
 	global.Engine = gin.Default()
 
 	if appConfig.RequestLog == 1 {
-		global.Engine.Use(requestLogger.GetLogger())
+		global.Engine.Use(request_logger.GetLogger())
 	}
 
 	// 跨域处理
